@@ -1,0 +1,6 @@
+<ul *ngIf='data'>
+  <li *ngFor='let item of data.items'>
+    <a href='https://www.youtube.com/watch?v={{item.id.videoId}}' target="_blank">{{item.snippet.title}}</a>
+    <img src="{{item.snippet.thumbnails.default.url}}" alt="{{item.snippet.title}}">
+  </li>
+</ul>
